@@ -36,7 +36,7 @@ header {
 }
 
 .item-menu-navegacao a{
-    margin: 0 10px;
+    margin: 0 15px;
     color: #ACABB7;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -325,7 +325,7 @@ table {
     margin: 40px auto;
     color: #F1F0F5;
     text-align: left;
-    width: 70%;
+    width: 82%;
 }
 
 th, td {
