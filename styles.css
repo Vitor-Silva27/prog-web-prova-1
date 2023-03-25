@@ -14,6 +14,8 @@ body{
     background-color: #1A1A1A;
 }
 
+/* Estilização do header */
+
 header {
     background-color: #1F1F1F;
     
@@ -44,6 +46,24 @@ header img {
     display: block;
     justify-self: flex-start;
 }
+
+
+/* Estilização do footer */
+footer {
+    height: 90px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: #1F1F1F;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    margin: 15px;
+}
+
+/* Estilização da pagina Home - perfil */
 
 .perfil {
     display: flex;
@@ -85,6 +105,7 @@ header img {
     margin-top: 55px;
     padding: 30px;
     border-top: solid 1px #33303E;
+    height: 37.4vh;
 }
 
 .info-item {
@@ -105,21 +126,77 @@ header img {
     font-size: 0.975rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-
     color: #C6C5CE;
 }
 
-footer {
-    height: 90px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+
+/* Estilização de pagina de disciplina */
+
+.secao-intro {
     display: flex;
-    background-color: #1F1F1F;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6.5rem 60px;
+    height: 90vh;
+    position: relative;
 }
 
-footer a {
-    margin: 15px;
+.intro-conteudo-container {
+    width: 40%;
 }
+
+.sobre-titulo{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ACABB7;
+}
+.texto-background {
+    color: rgba(255, 255, 255, 0.02);
+    position: absolute;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+    top: -50px;
+    left: 200px;
+    z-index: -1;
+    bottom: 0;
+}
+
+.titulo-intro {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #F1F0F5;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.conteudo-intro {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.975rem;
+    color: #E1E0E7;
+    line-height: 1.5;
+}
+.imagens-intro {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.imagem-intro:nth-child(2){
+    align-self: start;
+}
+.imagem-intro {
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+/* Estilizacao da secao de ementa */
