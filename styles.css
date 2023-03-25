@@ -316,3 +316,26 @@ iframe {
     align-self: flex-end;
     flex-direction: row-reverse;
 }
+
+
+
+/* Estilização da tabela de trabalho em grupo */
+
+table {
+    margin: 40px auto;
+    color: #F1F0F5;
+    text-align: left;
+    width: 70%;
+}
+
+th, td {
+    padding: 15px 0;
+    border-bottom: solid 1px #33303E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+td a {
+    color: #25B4D7;
+}
