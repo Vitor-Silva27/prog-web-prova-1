@@ -1,3 +1,7 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +19,35 @@ header {
     
     width: 100%;
     height: 3.75rem;
-
+    padding: 0px 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.menu-navegacao {
+    justify-self: center;
+    flex: 1;
+}
+.lista-menu-navegacao {
+    display: flex;
     justify-content: center;
+}
+
+.item-menu-navegacao a{
+    margin: 0 10px;
+    color: #ACABB7;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header img {
+    display: block;
+    justify-self: flex-start;
+}
+
+.perfil {
+    width: 180px;
+    height: 192px;   
 }
