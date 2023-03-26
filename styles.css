@@ -290,6 +290,10 @@ footer a:hover {
     position: relative;
 }
 
+.secao-ementa.vazio {
+    height: 700px;
+}
+
 .titulo-secao {
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
@@ -362,6 +366,10 @@ iframe {
     margin: 300px 150px;
     display: flex;
     flex-direction: column;
+}
+
+.secao-bibliografia.vazio {
+    margin-bottom: 50px;
 }
 
 .secao-bibliografia .titulo-secao {
