@@ -102,6 +102,7 @@ header img {
     background: url('./images/menu-mobile.png') no-repeat center center;
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 /* Estilização do footer */
@@ -109,6 +110,7 @@ footer {
     height: 90px;
     width: 100%;
     position: relative;
+    bottom: 0;
     display: flex;
     background-color: #1F1F1F;
     justify-content: center;
@@ -577,6 +579,33 @@ td a {
     }
     .menu-mobile {
         display: block;
+    }
+    .menu-navegacao.menu-ativo{
+        display: block;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background-color: #1F1F1F;
+        top: 0px;
+        scroll-behavior: unset;
+        position: fixed;
+        z-index: 1;
+    }
+    .menu-navegacao.menu-ativo .lista-menu-navegacao{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-navegacao.menu-ativo .lista-menu-navegacao .item-menu-navegacao{
+        margin-bottom: 20px;
+    }
+
+    .menu-mobile.menu-mobile-ativo {
+        display: block;
+        background: url('./images/sair.png') no-repeat center center;
+        right: 30px;
+        position: absolute;
+        z-index: 1000;
     }
 }
 
