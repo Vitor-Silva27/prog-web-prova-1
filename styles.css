@@ -587,6 +587,7 @@ td a {
     }
     .secao-intro {
         padding: 2rem 1rem;
+        overflow: hidden;
     }
     .secao-ementa {
         height: 1200px;
