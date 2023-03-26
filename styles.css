@@ -12,6 +12,28 @@
 
 body{
     background-color: #1A1A1A;
+    scroll-behavior: smooth;
+}
+
+/* Estilização do scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #33303E;
+}
+  
+  /* Handle */
+  
+::-webkit-scrollbar-thumb {
+    background: #FFAE0D;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #25B4D7;
 }
 
 /* Estilização do header */
@@ -107,37 +129,37 @@ footer a:hover {
 .perfil h1 {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
 
     color: #F1F0F5;
     
     margin: 30px 0;
 }
 
-.foto-perfil {
+#foto-perfil {
     width: 180px;
     height: 192px;
 
     border-radius: 30px;
-    border: solid 3px #24DC57;
+    border: solid 3px #00CDFF;
     margin: 30px 0;
 }
 
-.nome-aluno {
+#nome-aluno {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     color: #F1F0F5;
 }
 
-.info {
+#info {
     display: flex;
     width: 80%;
     justify-content: space-around;
     margin-top: 55px;
     padding: 30px;
     border-top: solid 1px #33303E;
-    height: 37.4vh;
+    height: 35vh;
 }
 
 .info-item {
@@ -474,13 +496,13 @@ td a {
 
 /* animacao de entrada */
 
-.sobre-titulo, .info {
+.sobre-titulo, #foto-perfil {
     animation: entrada 1.2s ease-out 0s;
 }
-.titulo-intro, .nome-aluno{
+.titulo-intro, #nome-aluno{
     animation: entrada 1s ease-out 0s;
 }
 
-.conteudo-intro, .foto-perfil{
+.conteudo-intro, #info{
     animation: entrada 0.8s ease-out 0s;
 }
