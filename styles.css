@@ -533,8 +533,12 @@ td a {
     animation: entrada 1s ease-out 0s;
 }
 
-.conteudo-intro, #info{
+.conteudo-intro, #info, .sobre{
     animation: entrada 0.8s ease-out 0s;
+}
+
+.menu-navegacao {
+    animation: entrada 0.4s ease-out 0s;
 }
 
 /* Responsividade */
