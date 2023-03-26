@@ -207,6 +207,7 @@ footer a:hover {
     height: 95vh;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .intro-conteudo-container {
@@ -474,7 +475,8 @@ td a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
+    padding: 0 30px;
 }
 
 .sobre p {
@@ -500,17 +502,17 @@ td a {
 
 @keyframes intro-imagens-anim {
     0%   {transform: translate(0, 0px);}
-    25%  {transform: translate(0, -3px);}
+    25%  {transform: translate(0, -5px);}
     50%  {transform: translate(0, 0px);}
-    75%  {transform: translate(0, 3px);}
+    75%  {transform: translate(0, 5px);}
     100% {transform: translate(0, 0px);}
 }
 
 @keyframes intro-imagens-anim-rev {
     0%   {transform: translate(0, 0px);}
-    25%  {transform: translate(0, 3px);}
+    25%  {transform: translate(0, 5px);}
     50%  {transform: translate(0, 0px);}
-    75%  {transform: translate(0, -3px);}
+    75%  {transform: translate(0, -5px);}
     100% {transform: translate(0, 0px);}
 }
 
@@ -530,8 +532,10 @@ td a {
 /* Responsividade */
 
 @media(max-width: 1500px) {
-    .imagens-intro {
-        display: none;
+    .imagem-intro {
+        height: 300px;
+        width: 180px;
+        margin: 20px;
     }
     .intro-conteudo-container {
         width: 80%;
@@ -539,6 +543,12 @@ td a {
 }
 
 @media(max-width: 1365px) {
+    .titulo-intro {
+        font-size: 3rem;
+    }
+    .conteudo-intro {
+        font-size: 0.75rem;
+    }
 
     .secao-bibliografia {
         margin: 300px 150px;
@@ -574,6 +584,16 @@ td a {
         justify-self: center;
     }
 
+    .item-menu-navegacao{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media(max-width: 1180px) {
+    .imagens-intro{
+        display: none;
+    }
     .menu-navegacao {
         display: none;
     }
@@ -599,7 +619,7 @@ td a {
     .menu-navegacao.menu-ativo .lista-menu-navegacao .item-menu-navegacao{
         margin-bottom: 20px;
     }
-
+    
     .menu-mobile.menu-mobile-ativo {
         display: block;
         background: url('./images/sair.png') no-repeat center center;
@@ -607,9 +627,6 @@ td a {
         position: absolute;
         z-index: 1000;
     }
-}
-
-@media(max-width: 985px) {
 
     .nome-livro {
         font-size:1.5rem;
@@ -639,9 +656,16 @@ td a {
     iframe {
         width: 90%;
     }
+    .sobre p {
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width: 600px) {
+    .sobre p {
+        font-size: 1rem;
+        text-align: left;
+    }
     .secao-bibliografia {
         width: 95%;
         margin-left: 0;
@@ -677,7 +701,7 @@ td a {
     }
     #info {
        width: 100%;
-       height: 39vh;
+       height: 400px;
     }
     .info-item {
         height: 70px;
@@ -702,5 +726,9 @@ td a {
 @media(max-width: 375px) {
     .secao-intro {
         height: 1200px;
+    }
+    .sobre p {
+        font-size: 0.75rem;
+        text-align: left;
     }
 }
