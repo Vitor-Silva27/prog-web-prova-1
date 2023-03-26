@@ -474,13 +474,13 @@ td a {
 
 /* animacao de entrada */
 
-.sobre-titulo {
+.sobre-titulo, .info {
     animation: entrada 1.2s ease-out 0s;
 }
-.titulo-intro{
+.titulo-intro, .nome-aluno{
     animation: entrada 1s ease-out 0s;
 }
 
-.conteudo-intro{
+.conteudo-intro, .foto-perfil{
     animation: entrada 0.8s ease-out 0s;
 }
