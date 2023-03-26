@@ -40,6 +40,33 @@ header {
     color: #ACABB7;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.item-menu-navegacao .ativo{
+    color: #00CDFF;
+}
+
+.item-menu-navegacao a:hover{
+    color: #FFF;
+}
+
+.item-menu-navegacao a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.item-menu-navegacao a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 header img {
@@ -188,16 +215,22 @@ footer a {
     justify-content: space-around;
     align-items: flex-end;
 }
-.imagem-intro:nth-child(2){
-    align-self: start;
-}
 .imagem-intro {
     height: 400px;
     width: 250px;
     object-fit: cover;
     border-radius: 25px;
+    position: relative;
 }
 
+.imagem-intro:nth-child(even){
+    align-self: start;
+    animation: entrada 2s ease-in-out 0s, intro-imagens-anim-rev 6s linear 3s infinite;
+}
+
+.imagem-intro:nth-child(odd){
+    animation: entrada 2s ease-in-out 0s, intro-imagens-anim 6s linear 3s infinite;
+}
 
 /* Estilizacao da secao de ementa */
 
@@ -218,6 +251,20 @@ footer a {
     color: #F1F0F5;
     text-align: center;
     margin: 0 auto;
+    position: relative;
+}
+
+.titulo-secao::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -10px; 
+    margin: 0 auto;
+	left: 0;
+	width: 160px;
+    height: 5px;
+	background: #FFAE0D;
+    border-radius: 10px;
 }
 
 .secao-ementa .titulo-secao {
@@ -335,6 +382,10 @@ iframe {
 
 
 /* Estilização da tabela de trabalho em grupo */
+.secao-trabalho {
+    display: flex;
+    flex-direction: column;
+}
 
 table {
     margin: 40px auto;
@@ -373,4 +424,46 @@ td a {
     color: #F1F0F5;
     font-size: 1.5rem;
     line-height: 2;
+}
+
+/* animacoes */
+
+@keyframes entrada{
+    from{
+      transform: translateY(-100px);
+      opacity: .1;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes intro-imagens-anim {
+    0%   {transform: translate(0, 0px);}
+    25%  {transform: translate(0, -3px);}
+    50%  {transform: translate(0, 0px);}
+    75%  {transform: translate(0, 3px);}
+    100% {transform: translate(0, 0px);}
+}
+
+@keyframes intro-imagens-anim-rev {
+    0%   {transform: translate(0, 0px);}
+    25%  {transform: translate(0, 3px);}
+    50%  {transform: translate(0, 0px);}
+    75%  {transform: translate(0, -3px);}
+    100% {transform: translate(0, 0px);}
+}
+
+/* animacao de entrada */
+
+.sobre-titulo {
+    animation: entrada 1.5s ease-out 0s;
+}
+.titulo-intro{
+    animation: entrada 1s ease-out 0s;
+}
+
+.conteudo-intro{
+    animation: entrada 0.5s ease-out 0s;
 }
