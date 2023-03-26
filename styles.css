@@ -725,7 +725,7 @@ td a {
 
 @media(max-width: 375px) {
     .secao-intro {
-        height: 1200px;
+        height: 700px;
     }
     .sobre p {
         font-size: 0.75rem;
