@@ -204,6 +204,7 @@ footer a:hover {
     padding: 6.5rem 60px;
     height: 95vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 .intro-conteudo-container {
@@ -279,6 +280,7 @@ footer a:hover {
     background-color: #F1F0F5;
     height: 900px;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
@@ -438,13 +440,15 @@ iframe {
 .secao-trabalho {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
 }
 
 table {
     margin: 40px auto;
     color: #F1F0F5;
     text-align: left;
-    width: 82%;
+    width: 1200px;
 }
 
 th, td {
