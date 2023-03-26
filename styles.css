@@ -90,6 +90,11 @@ footer a {
     margin: 15px;
 }
 
+
+footer a:hover {
+    filter: brightness(100);
+}
+
 /* Estilização da pagina Home - perfil */
 
 .perfil {
@@ -225,11 +230,11 @@ footer a {
 
 .imagem-intro:nth-child(even){
     align-self: start;
-    animation: entrada 2s ease-in-out 0s, intro-imagens-anim-rev 6s linear 3s infinite;
+    animation: entrada 1.5s ease-in-out 0s, intro-imagens-anim-rev 2s linear 1.7s infinite;
 }
 
 .imagem-intro:nth-child(odd){
-    animation: entrada 2s ease-in-out 0s, intro-imagens-anim 6s linear 3s infinite;
+    animation: entrada 1.5s ease-in-out 0s, intro-imagens-anim 2s linear 1.7s infinite;
 }
 
 /* Estilizacao da secao de ementa */
@@ -289,6 +294,12 @@ footer a {
     font-weight: 400;
     border-radius: 10px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+}
+
+.conteudo-ementa:hover{
+    background-color: #E1E0E7;
+    transition: background-color 0.5s;
+    cursor: pointer;
 }
 
 .secao-ementa p {
@@ -363,6 +374,12 @@ iframe {
     text-align: center;
     margin-top: 40px;
 }
+
+.botao-comprar-livro:hover {
+    background-color: rgb(31, 147, 177);
+    transition: background-color 0.3s;
+}
+
 .livro:nth-child(even) {
     align-self: flex-start;
 }
@@ -458,12 +475,12 @@ td a {
 /* animacao de entrada */
 
 .sobre-titulo {
-    animation: entrada 1.5s ease-out 0s;
+    animation: entrada 1.2s ease-out 0s;
 }
 .titulo-intro{
     animation: entrada 1s ease-out 0s;
 }
 
 .conteudo-intro{
-    animation: entrada 0.5s ease-out 0s;
+    animation: entrada 0.8s ease-out 0s;
 }
