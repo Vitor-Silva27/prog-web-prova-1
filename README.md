@@ -1,9 +1,11 @@
 
 # Sobre o projeto
 <p>Esse projeto é uma atividade avaliativa da disciplina de programação paar internet I do curso de Analise e desenvolvimento de sistemas.</p>
-<img src="./images/design.png" width="850">
-<img src="./images/disciplin-responsivo.png" width="200">
+<div style="display: flex; flex-wrap: wrap;">
+<img src="./images/design.png" width="850" style="margin-right:20px">
+<img src="./images/disciplin-responsivo.png" width="200" style="margin-right:20px">
 <img src="./images/profile-responsivo.png" width="200"><br>
+</div>
 
 ## A proposta da atividade era a seguinte:
 
